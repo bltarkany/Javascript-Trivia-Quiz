@@ -38,3 +38,16 @@ hr {
     border: 2px solid #63a375;
 }
 
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 28px;
+    cursor: pointer;
+}
+
+.startBtn {
+    background-color: #bc2c1a;
+    color: #ffffff;
+    font-size: 20px;
+}
+
