@@ -2,6 +2,19 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+header {
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+    /* to show background */
+    /* background-color: aqua; */
+    color: blueviolet;
+    /* to display in a block formation */
+    /* display: inline-block; */
+}
+
 .scores {
     position: absolute;
     top: 10px;
