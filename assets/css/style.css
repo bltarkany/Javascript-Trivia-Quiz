@@ -52,3 +52,8 @@ button {
     font-size: 20px;
 }
 
+/* hides questions until after the start button is pressed */
+/* .hide {
+    display: none;
+} */
+
