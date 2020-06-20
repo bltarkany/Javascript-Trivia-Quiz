@@ -16,6 +16,28 @@ const questions = [
         choices: ['alertBox("Hello World");', 'msg("Hello World");', 'alert("Hello World");', 'msgBox("Hello World");'],
         answer: 'alert("Hello World");'
     },{
-        
+        question: 'How do you create a function in JavaScript?',
+        choices: ['function myFunction()', 'function = myFunction()', 'function:myFunction()', 'function{myFunction()}'],
+        answer: 'function myFunction()'
+    },{
+        question: 'How do you call a function named "myFunction"?',
+        choices: ['call function myFunction()', 'myFunction()', 'call myFunction()', 'callback myFunction()'],
+        answer: 'myFunction()'
+    },{
+        question: 'How to write an IF statement in JavaScript?',
+        choices: ['if i == 5', 'if (i == 5)', 'if i == 5 then', 'if i = 5 then'],
+        answer: 'if (i == 5)'
+    },{
+        question: 'How to write an IF statement for executing some code if "i" is NOT equal to 5?',
+        choices: ['if i =! 5 then', 'if (i <> 5)', 'if (i != 5)', 'if i <> 5'],
+        answer: 'if (i != 5)'
+    },{
+        question: 'How does a FOR loop start?',
+        choices: ['for i = 1 to 5', 'for (i = 0; i <= 5)', 'for (i <= 5; i++)', 'for (i = 0; i <= 5; i++)'],
+        answer: 'for (i = 0; i <= 5; i++)'
+    },{
+        question: 'How can you add a comment in a JavaScript?',
+        choices: ['//This is a comment', '/* this is a comment */', '<!--This is a comment-->', 'This is a comment'],
+        answer: '//This is a comment'
     }
-]
+];
