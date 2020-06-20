@@ -53,9 +53,9 @@ button {
 }
 
 /* hides questions until after the start button is pressed */
-/* .hide {
+.hide {
     display: none;
-} */
+}
 
 #submit {
     background-color: #7fb7be;
