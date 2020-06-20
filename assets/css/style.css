@@ -57,3 +57,10 @@ button {
     display: none;
 } */
 
+#submit {
+    background-color: #7fb7be;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 6px 16px;
+}
+
