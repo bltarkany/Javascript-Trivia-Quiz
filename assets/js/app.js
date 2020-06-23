@@ -20,6 +20,18 @@ const initialsContainer = document.getElementById('initials');
 
 // global functions
 
+// timer count down function
+function countDown() {
+    // decrement time and print to Dom
+    time--;
+    timeContainer.textContent = time;
+
+    // conditional statement to end game if time is 0
+    if (time <= 0){
+        endgame();
+    }
+}
+
 
 
 // application start
