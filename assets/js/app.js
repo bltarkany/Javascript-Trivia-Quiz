@@ -49,7 +49,28 @@ function startGame() {
 
 // populate questions and answers
 function populate(){
+    // grab question question at the above index
+    let current = questions[currentQuestionIndex];
+    questionContainer.textContent = current.question;
 
+    // clear previous children
+    buttons.textContent = '';
+
+    // function that loops through choices and creates a button for each
+    current.choices.forEach(
+        function(choice, i){
+            // populate question choices
+            var optionNode = document.createElement("button");
+            optionNode.classList.add('choice');
+            optionNode.setAttribute("value", choice);
+            // text the name to the button with an increasing index
+            optionNode.textContent = i + 1 + '.' + choice;
+            // add eventListener to each button
+            optionNode.onclick = answerCheck;
+            // append the choice 
+            buttons.appendChild(optionNode);
+        }
+    );
 }
 
 // answer check of the button clicked

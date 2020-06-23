@@ -64,3 +64,11 @@ button {
     padding: 6px 16px;
 }
 
+.choice {
+    display: block;
+    background-color: #b8d0eb;
+    padding: 10px 24px;
+    margin: 5px;
+    font-size: 16px;
+    border: 2px;
+}
