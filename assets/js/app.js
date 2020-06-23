@@ -1,9 +1,8 @@
-// global variables
+// ==========global variables===========
 // game counters
 var currentQuestionIndex = 0;
 var time = questions.length * 15;
 var timer;
-
 
 // html #id grab
 const start = document.getElementById('start');
@@ -17,8 +16,7 @@ const finalScore = document.getElementById('final-score');
 const initialsContainer = document.getElementById('initials');
 
 
-
-// global functions
+// ========global functions==============
 
 // timer count down function
 function countDown() {
@@ -28,11 +26,40 @@ function countDown() {
 
     // conditional statement to end game if time is 0
     if (time <= 0){
-        endgame();
+        endGame();
     }
 }
 
+// start quiz function
+function startGame() {
+
+}
+
+// populate questions and answers
+function populate(){
+
+}
+
+// answer check of the button clicked
+function answerCheck() {
+
+}
+
+// end game function 
+function endGame() {
+
+}
+
+// save the high score of the new player
+function saveScore() {
+
+}
+
+// check if user pushed enter instead of clicking submit
+function enterCheck() {
+    
+}
 
 
-// application start
+// ===============application start===================
 
