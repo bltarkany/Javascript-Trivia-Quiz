@@ -21,6 +21,14 @@ function printScores() {
 }
 
 // function to clear high scores 
+function clearScores() {
+    // remove item to completely remove array from local storage
+    window.localStorage.removeItem("highScores");
+    window.location.reload();
+}
 
 // callbacks
 printScores();
+
+// onclick
+document.getElementById("clear").onclick = clearScores;
