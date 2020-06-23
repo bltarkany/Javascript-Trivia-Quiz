@@ -14,7 +14,8 @@ const buttons = document.getElementById('btns');
 const result = document.getElementById('result');
 const finalScore = document.getElementById('final-score');
 const initialsContainer = document.getElementById('initials');
-
+const welcome = document.getElementById('welcome');
+const end = document.getElementById('end-game');
 
 // ========global functions==============
 
@@ -32,7 +33,18 @@ function countDown() {
 
 // start quiz function
 function startGame() {
+    // hide welcome message and show the game section
+    welcome.classList.add('hide');
+    game.classList.remove('hide');
 
+    // show starting time
+    timeContainer.textContent = time;
+
+    // start timer
+    timer = setInterval(countDown, 1000);
+
+    // generate questions with answer choices
+    populate();
 }
 
 // populate questions and answers
@@ -57,9 +69,11 @@ function saveScore() {
 
 // check if user pushed enter instead of clicking submit
 function enterCheck() {
-    
+
 }
 
 
 // ===============application start===================
 
+// onclick for start button
+start.onclick = startGame;

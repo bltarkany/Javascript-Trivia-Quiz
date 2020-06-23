@@ -18,13 +18,13 @@
         <header>
             <!-- absolute position to get alignment -->
             <a class="scores" href="highscore.html">View High Scores</a>
-            <div class="timer">Time: <span class="time">0</span> </div>
+            <div class="timer">Time: <span id="time">0</span> </div>
         </header>
         <section class="content">
             <h1>JavaScript Code Quiz</h1>
             <hr>
         </section>
-        <section class="content">
+        <section id="welcome" class="content">
             <p>Welcome to the JavaScript code quiz!</p>
             <p>Test your knowledge. Timer is set at 120 seconds. Choose the correct answer and you will quickly move on to the next question.
                 Choose the wrong answer and time will be deducted. Your score is based on the remaining time you have on the clock. Quicker 
@@ -52,6 +52,10 @@
         <section id="result" class="content hide"></section>
 
     </main>
+
+    <!-- scripts for javascript -->
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/app.js"></script>
 
 </body>
 
