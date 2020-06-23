@@ -141,8 +141,11 @@ function saveScore() {
 }
 
 // check if user pushed enter instead of clicking submit
-function enterCheck() {
-
+function enterCheck(event) {
+    // "13" represents the Enter Key
+    if(event.key === "Enter"){
+        saveScore();
+    }
 }
 
 
@@ -153,3 +156,6 @@ start.onclick = startGame;
 
 // onclick event for submit button
 submit.onclick = saveScore;
+
+// on key up for enter key after initials input
+initialsContainer.onkeyup = enterCheck;
