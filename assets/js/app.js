@@ -119,7 +119,25 @@ function endGame() {
 
 // save the high score of the new player
 function saveScore() {
-
+    // grab entered initials
+    var initials = initialsContainer.value.trim();
+    
+    // conditional verifying initials input
+    if(initials !== ""){
+        // check local storage for saved scores
+        var highScores = JSON.parse(window.localStorage.getItem("highScores")) || [];
+        // create current players high score object
+        var newScore = {
+            initials: initials,
+            score: time
+        };
+        // add new player to high score list
+        highScores.push(newScore);
+        // Save updated high scores to local storage key: item
+        window.localStorage.setItem("highScores", JSON.stringify(highScores));
+        // redirect to the high scores page
+        window.location.href = 'highscore.html'
+    }
 }
 
 // check if user pushed enter instead of clicking submit
@@ -132,3 +150,6 @@ function enterCheck() {
 
 // onclick for start button
 start.onclick = startGame;
+
+// onclick event for submit button
+submit.onclick = saveScore;
