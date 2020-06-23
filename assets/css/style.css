@@ -72,3 +72,8 @@ button {
     font-size: 16px;
     border: 2px;
 }
+
+.winners {
+    display: block;
+    text-align: left;
+}
