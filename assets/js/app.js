@@ -64,7 +64,7 @@ function populate(){
             optionNode.classList.add('choice');
             optionNode.setAttribute("value", choice);
             // text the name to the button with an increasing index
-            optionNode.textContent = i + 1 + '.' + choice;
+            optionNode.textContent = i + 1 + '. ' + choice;
             // add eventListener to each button
             optionNode.onclick = answerCheck;
             // append the choice 
