@@ -108,7 +108,13 @@ function answerCheck() {
 
 // end game function 
 function endGame() {
-
+    // stop timer
+    clearInterval(timer);
+    // show end game section 
+    end.classList.remove('hide');
+    finalScore.textContent = time;
+    // hide question section 
+    game.classList.add('hide');
 }
 
 // save the high score of the new player
