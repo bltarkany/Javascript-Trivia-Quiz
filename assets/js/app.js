@@ -75,7 +75,35 @@ function populate(){
 
 // answer check of the button clicked
 function answerCheck() {
+    // this refers to the button that was clicked
+    if(this.value !== questions[currentQuestionIndex].answer){
+        // subtract question time off of timer. Send new time
+        time -= 15;
+        // conditional checking that time does not go below zero
+        if (time <= 0){
+            time = 0;
+        }
+        // print to DOM
+        timeContainer.textContent = time;
+        // display type of result
+        result.textContent = "Incorrect!";
+    } else {
+        result.textContent = "Correct!";
+    }
 
+    // set the result of the answer to flash for a period of time
+    result.classList.remove('hide');
+    setTimeout(function() {
+        result.classList.add('hide');
+    }, 1000)
+    // increase question index
+    currentQuestionIndex ++;
+    // populate next question or end game if last question 
+    if (currentQuestionIndex === questions.length){
+        endGame();
+    } else {
+        populate();
+    }
 }
 
 // end game function 

@@ -5,7 +5,7 @@ const questions = [
         answer: '<script>'
     },{
         question: 'Where is the correct place to insert a JavaScript?',
-        choices: ['The <body> section', 'Both the <head> section adn the <body> section are correct>', 'The <head> section', 'Nowhere'],
+        choices: ['The <body> section', 'Both the <head> section and the <body> section are correct>', 'The <head> section', 'Nowhere'],
         answer: 'Both the <head> section adn the <body> section are correct>'
     },{
         question: 'What is the correct syntax for referring to an external script called "xxx.js"?',
